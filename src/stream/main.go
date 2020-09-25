@@ -15,16 +15,9 @@ func main() {
 	}
 	cmd.Start()
 
-	buf := bufio.NewReader(stdout)                  // buf := bufio.NewReader(stdout)
-													// num := 1
-	for {											// for {
-		line, _, _ := buf.ReadLine()				//      line, _, _ := buf.ReadLine()
-		fmt.Println(string(line))					//      if num > 3 {
-	}												//         os.Exit(0)
-													// 		}
-													// 		num += 1
-													// 		fmt.Println(string(line))
-													// }
-
+	buf := bufio.NewReader(stdout)
+	for {
+		line, _, _ := buf.ReadLine()
+		fmt.Println(string(line))
+	}
 }
-
